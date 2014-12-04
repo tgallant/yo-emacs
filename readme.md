@@ -18,4 +18,11 @@ Coming soon...
 
 ##Default Keybindings
 
-Coming soon...
+Keybind   | Command
+--------  | --------
+`M-g s`   |  grunt-server
+`M-g b i` |  bower-install
+`M-g b s` |  bower-install-save
+`M-g n i` |  npm-install
+`M-g n s` |  npm-install-save
+`M-g n g` |  npm-install-g

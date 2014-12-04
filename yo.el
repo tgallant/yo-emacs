@@ -140,5 +140,21 @@
   (interactive "SPackage: ")
   (npm-cmd (format "install -g %s")))
 
-;; keybindings
+;; grunt commands
 
+(defun grunt (cmd)
+  (interactive "SCommand: ")
+  (grunt-cmd cmd))
+
+(defun grunt-server ()
+  (interactive)
+  (grunt-cmd "server"))
+
+;; default keybindings
+
+(global-set-key (kbd "M-g s") 'grunt-server)
+(global-set-key (kbd "M-g b i") 'bower-install)
+(global-set-key (kbd "M-g b s") 'bower-install-save)
+(global-set-key (kbd "M-g n i") 'npm-install)
+(global-set-key (kbd "M-g n s") 'npm-install-save)
+(global-set-key (kbd "M-g n g") 'npm-install-g)
